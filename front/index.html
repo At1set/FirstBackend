@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/clearstyle.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Заполнение формы</title>
+</head>
+<body>
+  <div class="wrapper">
+    <form class="main_from">
+      <div class="main_form__body">
+        <div class="main_from__title">
+          <h1>Заполните форму</h1>
+        </div>
+        <div class="main_form__field">
+          <div>Введите ваше имя:</div>
+          <input type="text" placeholder="Дмитрий" name="name" tabindex="1" required>
+        </div>
+        <div class="main_form__field">
+          <div>Введите emal:</div>
+          <input type="email" placeholder="email@gmal.com" name="email" tabindex="2" required>
+        </div>
+        <div class="main_form__field form__password">
+          <div>Придумайте пароль:</div>
+          <input type="password" name="password" minlength="5" tabindex="3" required>
+        </div>
+        <div class="main_form__field form__password">
+          <div>Повторите пароль:</div>
+          <input type="password" tabindex="4" minlength="5" required>
+        </div>
+        <div class="form__submit_button" tabindex="5">
+          <button type="submit" disabled>Отправить</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>

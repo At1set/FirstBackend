@@ -1,0 +1,119 @@
+body {
+  font-family:'Courier New', Courier, monospace;
+  color: rgb(255, 255, 255);
+}
+
+.wrapper {
+  min-width: 100%;
+  min-height: 100%;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+}
+
+.main_from {
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 5px 5px 4px 0px #b29df7;
+  border-radius: 50px;
+  
+  background-image: linear-gradient(to right bottom, #a589ff, #a205c9);
+}
+
+.main_form__body {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_from__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main_from__title h1{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.main_form__field {
+  width: 90%;
+  font-size: 18px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main_form__field input {
+  flex: 0 0 auto;
+  max-width: 250px;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 5px;
+  height: 40px;
+  border-radius: 10px;
+  border: 3px solid #ab3cd6;
+}
+
+@media (max-width: 500.99px) {
+  .main_from {
+    border-radius: 0;
+  }
+  .main_form__body {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .main_form__field {
+    width: 100%;
+  }
+  .main_form__field div{
+    flex: 1 1 auto;
+  }
+  .main_form__field input {
+    flex: 0 1 auto;
+    width: auto;
+    display: block;
+    max-width: none;
+  }
+}
+
+
+.main_form__field div {
+  padding-right: 5px;
+}
+
+.form__password input{
+  border: 4px outset #c052ec;
+  border-radius: 0;
+}
+
+.form__submit_button {
+  margin-top: 40px;
+}
+
+.form__submit_button button {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(158, 8, 172);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 4px 4px 5px 1px #c052ec;
+  transition: 0.3s ease 0s;
+  transition-property: color, background-color, box-shadow;
+}
+
+.form__submit_button button:hover {
+  color: rgb(50, 35, 35);
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px 1px rgb(200, 198, 198);
+}
+
+.main_from button[type=submit]:disabled {
+  display: none;
+}
