@@ -1,4 +1,5 @@
 const cors = require("./cors.js")
+const ErrorHandler = require("./ErrorHandler.js")
 
 async function main(res) {
   cors.disable_cors(res)
@@ -7,4 +8,5 @@ async function main(res) {
 module.exports = {
   main,
   cors,
+  ErrorHandler,
 }
